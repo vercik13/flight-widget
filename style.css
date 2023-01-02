@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Ubuntu Condensed', sans-serif;
-
 }
 
 body {
@@ -16,16 +15,13 @@ img {
 header {
   font-size: 70px;
   text-align: center;
-
   margin: 20px auto;
 }
+
 main {
   font-size: 35px;
   color: whitesmoke;
-  display: flex;
-  justify-content: center;
   height: 80vh;
-  align-items: center;
   
 }
 
@@ -44,24 +40,25 @@ h1 {
   background-color: rgb(6, 6, 6);
   border-radius: 10px;
   padding: 10px;
+  width: 100rem;
+  margin: 7rem auto;
 }
 
 .departures table div {
-  
   border: solid 4px rgb(26, 26, 26);
   background-color: rgb(0, 0, 0);
-  
   float: left;
 }
 
 .departures table {
   background-color: rgb(46, 46, 46);
   text-align: left;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.departures table tr {
-  
-  flex-wrap: wrap;
+.overlay {
+  overflow-x: auto;
 }
 
 #time {
@@ -106,3 +103,46 @@ h1 {
   }
 }
 
+@media screen and (max-width: 764px) {
+
+  header {
+    font-size: 3rem;
+  }
+  h1 {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+
+  .departures {
+    width: 60rem;
+    margin: 6rem 2rem;
+  }
+
+  .departures table {
+    font-size: 1.5rem;
+  }
+
+  #time {
+    width: 65px;
+  }
+  
+  #destination {
+    width: 150px;
+  }
+  
+  #flight {
+    width: 70px;
+  }
+  
+  #terminal {
+    width: 30px ;
+  }
+  
+  #gate {
+    width: 50px;
+  }
+  
+  #remarks {
+    width: 200px;
+   }
+}

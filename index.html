@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet"> 
+
+
 </head>
 <body>
   <header>
@@ -18,23 +20,26 @@
   </header>
   <main>
     <div class="departures">
-
       <h1>Departures</h1>
-      <table>
-        <thead>
-          <tr>
-            
-            <th id="time">Time</th>
-            <th id="destination">Destination</th>
-            <th id="flight">Flight</th>
-            <th id="terminal">Terminal</th>
-            <th id="gate">Gate</th>
-            <th id="remarks">Remarks</th>
-          </tr>
-        </thead>
-        <tbody id="table-body"></tbody>
-      </table>
-    </div>
+        <table class="table">
+          <thead>
+            <tr>
+              
+              <th id="time">Time</th>
+              <th id="destination">Destination</th>
+              <th id="flight">Flight</th>
+              <th id="terminal">Terminal</th>
+              <th id="gate">Gate</th>
+              <th id="remarks">Remarks</th>
+            </tr>
+          </thead>
+          <div class="overlay">
+            <tbody id="table-body">
+          </tbody>
+        </div>
+        </table>
+      </div>
+
   </main>
   <script src="app.js"></script>
 </body>
